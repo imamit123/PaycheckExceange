@@ -1,0 +1,23 @@
+uuid: 794083d4-e885-48e8-ad41-7350c2dc6d0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_category_markup_override
+    - taxonomy.vocabulary.catalog_category
+id: taxonomy_term.catalog_category.field_category_markup_override
+field_name: field_category_markup_override
+entity_type: taxonomy_term
+bundle: catalog_category
+label: 'Price Markup Override'
+description: 'Enter a percentage value to override the markup amount for <strong>all</strong> products in this category by. NOTE: This markup will only apply to products <strong>directly</strong> in the category (not in sub-categories).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: '%'
+field_type: decimal

@@ -1,0 +1,28 @@
+uuid: e3c7092a-01cc-4ac3-999b-b793410233d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_organization_ref
+    - pcx_orgs.organization_type.organization
+    - profile.type.employee
+id: profile.employee.field_emp_organization_ref
+field_name: field_emp_organization_ref
+entity_type: profile
+bundle: employee
+label: Organization
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:organization'
+  handler_settings:
+    target_bundles:
+      organization: organization
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

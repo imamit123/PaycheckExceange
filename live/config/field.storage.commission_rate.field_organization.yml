@@ -1,0 +1,24 @@
+uuid: 387aec87-5673-4ed3-b35f-f40c78deca1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - pcx_orgs
+    - pcx_rates
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: commission_rate.field_organization
+field_name: field_organization
+entity_type: commission_rate
+type: entity_reference
+settings:
+  target_type: organization
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

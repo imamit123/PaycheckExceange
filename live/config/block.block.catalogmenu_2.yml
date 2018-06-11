@@ -1,0 +1,43 @@
+uuid: df81acd8-71ab-4a17-84c4-65164f1e354e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.catalog-menu
+  module:
+    - block_visibility_groups
+    - system
+    - user
+  theme:
+    - paycheck_exchange
+id: catalogmenu_2
+theme: paycheck_exchange
+region: sidebar_first
+weight: -18
+provider: null
+plugin: 'system_menu_block:catalog-menu'
+settings:
+  id: 'system_menu_block:catalog-menu'
+  label: Catalog
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  request_path:
+    id: request_path
+    pages: /catalog
+    negate: true
+    context_mapping: {  }

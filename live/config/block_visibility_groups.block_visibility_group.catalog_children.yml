@@ -1,0 +1,17 @@
+uuid: 4f1a61e3-33ca-4b94-9505-58a838768904
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: catalog_children
+label: 'Catalog children'
+logic: and
+conditions:
+  ebd15a9d-31f0-4e72-a4b9-8da061abfc8d:
+    id: request_path
+    pages: '/catalog/*'
+    negate: false
+    context_mapping: {  }
+    uuid: ebd15a9d-31f0-4e72-a4b9-8da061abfc8d
+allow_other_conditions: true

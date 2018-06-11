@@ -1,0 +1,21 @@
+uuid: 3d9e5742-a347-438a-ac15-1850e1f9c7d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_minor_message
+field_name: field_minor_message
+entity_type: node
+type: string
+settings:
+  max_length: 555
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

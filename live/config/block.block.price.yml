@@ -1,0 +1,29 @@
+uuid: 0761c88f-2663-4408-a189-fd46f93f23ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.catalog_products
+    - facets.facet.msrp_price
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - paycheck_exchange
+id: price
+theme: paycheck_exchange
+region: sidebar_first
+weight: -21
+provider: null
+plugin: 'facet_block:msrp_price'
+settings:
+  id: 'facet_block:msrp_price'
+  label: Price
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: catalog_products
+    context_mapping: {  }

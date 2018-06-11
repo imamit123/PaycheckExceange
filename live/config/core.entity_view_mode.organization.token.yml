@@ -1,0 +1,10 @@
+uuid: febe064c-df4b-42a8-98af-50d3fb85f71a
+langcode: en
+status: true
+dependencies:
+  module:
+    - pcx_orgs
+id: organization.token
+label: Token
+targetEntityType: organization
+cache: true

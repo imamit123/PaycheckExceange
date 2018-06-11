@@ -1,0 +1,25 @@
+uuid: f7887261-5f38-4f6c-8c6e-1b3842c99856
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - pcx_orgs
+    - viewfield
+    - views
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: organization.field_org_referral_partners
+field_name: field_org_referral_partners
+entity_type: organization
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,28 @@
+uuid: 58cda044-e3ac-4fe1-bb5d-446f048498cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.fan_speeds
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.attribute_fan_speeds
+id: commerce_product_variation.default.attribute_fan_speeds
+field_name: attribute_fan_speeds
+entity_type: commerce_product_variation
+bundle: default
+label: 'Fan Speeds'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      fan_speeds: fan_speeds
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

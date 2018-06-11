@@ -1,0 +1,19 @@
+uuid: 7b70f36b-d0c0-46a0-8552-47d699dc967f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_link_target
+    - taxonomy.vocabulary.media
+id: taxonomy_term.media.field_link_target
+field_name: field_link_target
+entity_type: taxonomy_term
+bundle: media
+label: 'Link Target'
+description: 'e.g.: _blank, _self, _parent, _top, or framename'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

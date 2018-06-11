@@ -1,0 +1,103 @@
+uuid: d253007b-d6c4-4c74-b67d-f5a000abbd1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.referral_partner.field_referral_partner_commissio
+    - field.field.profile.referral_partner.field_rp_alt_email
+    - field.field.profile.referral_partner.field_rp_alt_phone
+    - field.field.profile.referral_partner.field_rp_date_of_birth
+    - field.field.profile.referral_partner.field_rp_date_of_hire
+    - field.field.profile.referral_partner.field_rp_gender
+    - field.field.profile.referral_partner.field_rp_home_address
+    - field.field.profile.referral_partner.field_rp_phone
+    - field.field.profile.referral_partner.field_rp_referral_organizations
+    - field.field.profile.referral_partner.field_rp_referral_partner_uid
+    - field.field.profile.referral_partner.field_rp_referred_by_partner
+    - field.field.profile.referral_partner.field_rp_referred_organizations
+    - profile.type.referral_partner
+  module:
+    - address
+    - datetime
+    - telephone
+id: profile.referral_partner.default
+targetEntityType: profile
+bundle: referral_partner
+mode: default
+content:
+  field_rp_alt_email:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_rp_alt_phone:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_rp_date_of_birth:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_rp_date_of_hire:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_rp_gender:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_rp_home_address:
+    weight: 2
+    settings:
+      default_country: null
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_rp_phone:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_rp_referral_organizations:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_rp_referral_partner_uid:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_rp_referred_by_partner:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  field_referral_partner_commissio: true
+  field_rp_referred_organizations: true

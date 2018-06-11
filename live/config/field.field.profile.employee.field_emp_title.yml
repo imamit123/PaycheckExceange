@@ -1,0 +1,19 @@
+uuid: d472a6ff-ddf0-4680-8c42-f90b37395677
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_title
+    - profile.type.employee
+id: profile.employee.field_emp_title
+field_name: field_emp_title
+entity_type: profile
+bundle: employee
+label: 'Employee Title'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

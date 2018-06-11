@@ -1,0 +1,28 @@
+uuid: dc73a731-8df7-4726-85e8-4866c628f4fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.brand
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - bartik
+id: brand
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'facet_block:brand'
+settings:
+  id: 'facet_block:brand'
+  label: Brand
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

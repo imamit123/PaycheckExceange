@@ -1,0 +1,22 @@
+uuid: da6ea9b5-66ec-4947-8442-009bcc561538
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - paycheck_exchange
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: paycheck_exchange_help
+theme: paycheck_exchange
+region: help
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

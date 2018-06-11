@@ -1,0 +1,31 @@
+uuid: 79a696a4-ca03-45a8-9944-591215c587fe
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8242974f-49d1-41d3-be57-564b6062fed9'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: footerthenewstandardblock
+theme: paycheck_exchange
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:8242974f-49d1-41d3-be57-564b6062fed9'
+settings:
+  id: 'block_content:8242974f-49d1-41d3-be57-564b6062fed9'
+  label: 'FOOTER - The new standard block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

@@ -1,0 +1,7 @@
+uuid: b2b88607-08da-4545-bc68-22994d7a0c67
+langcode: en
+status: true
+dependencies: {  }
+id: fan_speeds
+label: 'Fan Speeds'
+elementType: commerce_product_rendered_attribute

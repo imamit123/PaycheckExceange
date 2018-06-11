@@ -1,0 +1,14 @@
+uuid: 42281969-3247-4ea8-abc7-70ce1312cf54
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.organization
+  module:
+    - user
+id: user_remove_role_action.organization
+label: 'Remove the Organization role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: organization

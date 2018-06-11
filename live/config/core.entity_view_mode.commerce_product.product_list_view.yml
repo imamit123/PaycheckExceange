@@ -1,0 +1,10 @@
+uuid: fc653f2c-dd05-4e6c-8391-817a66e6e480
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.product_list_view
+label: 'Product List View'
+targetEntityType: commerce_product
+cache: true

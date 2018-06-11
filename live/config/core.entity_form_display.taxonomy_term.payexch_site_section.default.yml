@@ -1,0 +1,22 @@
+uuid: 17773eb5-6b5f-4fe6-866b-65f936571e9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.payexch_site_section
+id: taxonomy_term.payexch_site_section.default
+targetEntityType: taxonomy_term
+bundle: payexch_site_section
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

@@ -1,0 +1,32 @@
+uuid: 52f1ee44-256a-40cf-9356-ed06b166ed6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.authenticated_home_page
+    - views.view.header_slideshow
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - paycheck_exchange
+id: views_block__header_slideshow_fp_message
+theme: paycheck_exchange
+region: content
+weight: -23
+provider: null
+plugin: 'views_block:header_slideshow-fp_message'
+settings:
+  id: 'views_block:header_slideshow-fp_message'
+  label: 'Authenticated slideshow message'
+  provider: views
+  label_display: '0'
+  views_label: 'Authenticated slideshow message'
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: authenticated_home_page
+    context_mapping: {  }

@@ -1,0 +1,7 @@
+uuid: c01dcccf-cc06-46d3-9ff3-a8595ca8fa89
+langcode: en
+status: true
+dependencies: {  }
+id: mount_type
+label: 'Mount Type'
+elementType: commerce_product_rendered_attribute

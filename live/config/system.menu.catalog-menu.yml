@@ -1,0 +1,8 @@
+uuid: ed78491e-c985-47ea-a647-aab4d43075a2
+langcode: en
+status: true
+dependencies: {  }
+id: catalog-menu
+label: 'Catalog Menu'
+description: 'Catalog Menu (from Taxonomy)'
+locked: false

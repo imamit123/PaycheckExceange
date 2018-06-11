@@ -1,0 +1,22 @@
+uuid: 8fd9f926-81a4-4de3-8151-34adaefbc8a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - pcx_orgs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: organization.field_org_secondary_email
+field_name: field_org_secondary_email
+entity_type: organization
+type: email
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

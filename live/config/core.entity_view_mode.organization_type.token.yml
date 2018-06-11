@@ -1,0 +1,10 @@
+uuid: c04e182f-ebb1-454e-9340-741590c1d255
+langcode: en
+status: true
+dependencies:
+  module:
+    - pcx_orgs
+id: organization_type.token
+label: Token
+targetEntityType: organization_type
+cache: true

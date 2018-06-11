@@ -1,0 +1,19 @@
+uuid: 41446b9f-579a-43d8-9186-eeed37f966ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_minor_message
+    - taxonomy.vocabulary.media
+id: taxonomy_term.media.field_minor_message
+field_name: field_minor_message
+entity_type: taxonomy_term
+bundle: media
+label: 'Minor Message'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

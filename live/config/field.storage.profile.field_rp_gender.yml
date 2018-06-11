@@ -1,0 +1,31 @@
+uuid: 08e629a8-ce43-4a1d-a208-395f455e8b57
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - profile
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: profile.field_rp_gender
+field_name: field_rp_gender
+entity_type: profile
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: MALE
+      label: Male
+    -
+      value: FEMALE
+      label: Female
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

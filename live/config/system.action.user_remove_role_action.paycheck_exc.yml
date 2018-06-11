@@ -1,0 +1,14 @@
+uuid: f814500b-fa69-4953-b661-4b7dfe4d6ead
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.paycheck_exc
+  module:
+    - user
+id: user_remove_role_action.paycheck_exc
+label: 'Remove the Paycheck Exchange Admin role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: paycheck_exc

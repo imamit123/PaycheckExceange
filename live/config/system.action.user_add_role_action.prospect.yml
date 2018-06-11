@@ -1,0 +1,14 @@
+uuid: 7b7aad64-165c-47b9-b7c3-eeb7e9cffc80
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.prospect
+  module:
+    - user
+id: user_add_role_action.prospect
+label: 'Add the Prospect role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: prospect

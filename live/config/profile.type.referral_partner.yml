@@ -1,0 +1,17 @@
+uuid: 1a933101-8b2b-467c-8b62-4678ae6d0d0e
+langcode: en
+status: true
+dependencies: {  }
+id: referral_partner
+label: 'Referral Partner'
+registration: false
+multiple: false
+roles:
+  referral_partner: referral_partner
+  authenticated: '0'
+  administrator: '0'
+  employee: '0'
+  paycheck_exc: '0'
+weight: 0
+use_revisions: false
+description: null

@@ -1,0 +1,28 @@
+uuid: fbbcae13-1a03-4234-99ac-7af4adff0c76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organization.field_org_organization_status
+    - pcx_orgs.organization_type.organization
+    - taxonomy.vocabulary.organization_status
+id: organization.organization.field_org_organization_status
+field_name: field_org_organization_status
+entity_type: organization
+bundle: organization
+label: 'Organization Status'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      organization_status: organization_status
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

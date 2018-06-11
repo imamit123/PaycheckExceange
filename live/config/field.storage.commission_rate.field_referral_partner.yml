@@ -1,0 +1,24 @@
+uuid: a5aa821f-ca1e-43f2-aea0-4221a30ae057
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - pcx_rates
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: commission_rate.field_referral_partner
+field_name: field_referral_partner
+entity_type: commission_rate
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

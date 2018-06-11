@@ -1,0 +1,129 @@
+uuid: 73a9d906-7721-48f8-9e19-b7a7c171eb5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.employee.field_emp_alt_email
+    - field.field.profile.employee.field_emp_alt_phone
+    - field.field.profile.employee.field_emp_annual_income
+    - field.field.profile.employee.field_emp_date_of_birth
+    - field.field.profile.employee.field_emp_date_of_hire
+    - field.field.profile.employee.field_emp_employee_uid
+    - field.field.profile.employee.field_emp_gender
+    - field.field.profile.employee.field_emp_home_address
+    - field.field.profile.employee.field_emp_marital_status
+    - field.field.profile.employee.field_emp_organization_ref
+    - field.field.profile.employee.field_emp_phone
+    - field.field.profile.employee.field_emp_ssn_last_4
+    - field.field.profile.employee.field_emp_status
+    - field.field.profile.employee.field_emp_title
+    - profile.type.employee
+  module:
+    - address
+    - datetime
+    - telephone
+id: profile.employee.default
+targetEntityType: profile
+bundle: employee
+mode: default
+content:
+  field_emp_alt_email:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_emp_alt_phone:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_emp_annual_income:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_emp_date_of_birth:
+    weight: 14
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_emp_date_of_hire:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_emp_employee_uid:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_emp_gender:
+    weight: 12
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_emp_home_address:
+    weight: 5
+    settings:
+      default_country: null
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_emp_marital_status:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_emp_organization_ref:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_emp_phone:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_emp_ssn_last_4:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_emp_status:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_emp_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

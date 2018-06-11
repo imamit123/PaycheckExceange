@@ -1,0 +1,47 @@
+uuid: 3464aa8a-6761-4d94-a2b6-15eab74cf1ac
+langcode: en
+status: true
+dependencies: {  }
+id: employee
+label: Employee
+weight: -6
+is_admin: null
+permissions:
+  - 'access cart'
+  - 'access checkout'
+  - 'access wishlist'
+  - 'create default commerce_wishlist'
+  - 'create field_alt_email'
+  - 'create field_alt_phone'
+  - 'create field_emp_alt_email'
+  - 'create field_emp_alt_phone'
+  - 'create field_emp_home_address'
+  - 'create field_emp_phone'
+  - 'create field_home_address'
+  - 'create field_phone'
+  - 'delete default commerce_wishlist'
+  - 'edit own field_alt_email'
+  - 'edit own field_alt_phone'
+  - 'edit own field_emp_alt_email'
+  - 'edit own field_emp_alt_phone'
+  - 'edit own field_emp_home_address'
+  - 'edit own field_emp_phone'
+  - 'edit own field_home_address'
+  - 'edit own field_phone'
+  - 'update default commerce_wishlist'
+  - 'update own employee profile'
+  - 'view commerce_product'
+  - 'view commerce_store'
+  - 'view own commerce_order'
+  - 'view own commerce_wishlist'
+  - 'view own customer profile'
+  - 'view own employee profile'
+  - 'view own field_alt_email'
+  - 'view own field_alt_phone'
+  - 'view own field_emp_alt_email'
+  - 'view own field_emp_alt_phone'
+  - 'view own field_emp_home_address'
+  - 'view own field_emp_phone'
+  - 'view own field_home_address'
+  - 'view own field_phone'
+  - 'view profile'

@@ -1,0 +1,23 @@
+uuid: 7108f1d6-d9b1-4388-85ec-e53018017d15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organization.field_org_website_url
+    - pcx_orgs.organization_type.organization
+  module:
+    - link
+id: organization.organization.field_org_website_url
+field_name: field_org_website_url
+entity_type: organization
+bundle: organization
+label: 'Website URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

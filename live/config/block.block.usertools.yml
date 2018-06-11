@@ -1,0 +1,32 @@
+uuid: 9f18640e-50e5-40c1-85f6-9442f6a301a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.authenticated
+    - views.view.user_tool_menu
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - paycheck_exchange
+id: usertools
+theme: paycheck_exchange
+region: commerce
+weight: 0
+provider: null
+plugin: 'views_block:user_tool_menu-block_1'
+settings:
+  id: 'views_block:user_tool_menu-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: authenticated
+    context_mapping: {  }

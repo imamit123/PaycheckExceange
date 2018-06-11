@@ -1,0 +1,21 @@
+uuid: 68ff69a4-0d20-454b-9553-f0da00ab096e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_gender
+    - profile.type.employee
+  module:
+    - options
+id: profile.employee.field_emp_gender
+field_name: field_emp_gender
+entity_type: profile
+bundle: employee
+label: Gender
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

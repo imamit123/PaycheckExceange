@@ -1,0 +1,33 @@
+uuid: 80b67390-7450-4433-b423-30a668d75ad5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front
+  content:
+    - 'block_content:basic:c3f52f5c-7ea9-4d64-87e2-05c15b5dfb1e'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: memberbenefits2ndblock
+theme: paycheck_exchange
+region: fourth_right
+weight: 0
+provider: null
+plugin: 'block_content:c3f52f5c-7ea9-4d64-87e2-05c15b5dfb1e'
+settings:
+  id: 'block_content:c3f52f5c-7ea9-4d64-87e2-05c15b5dfb1e'
+  label: 'Member Benefits 2nd block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front
+    context_mapping: {  }

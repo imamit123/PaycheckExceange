@@ -1,0 +1,14 @@
+uuid: 50fab878-0708-42c2-8594-c2cfde56ae75
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.paycheck_exc
+  module:
+    - user
+id: user_add_role_action.paycheck_exc
+label: 'Add the Paycheck Exchange Admin role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: paycheck_exc

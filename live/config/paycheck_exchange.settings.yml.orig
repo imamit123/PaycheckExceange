@@ -1,0 +1,54 @@
+cdn_provider: ''
+logo:
+  path: themes/paycheck_exchange/logo.png
+  url: ''
+  use_default: false
+_core:
+  default_config_hash: JPrYXx8Eb0KvE4xjsX5tcMkkYQvQmhmSsSDQQCqqPIQ
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://dev-pay-xchg.pantheonsite.io/themes/paycheck_exchange/favicon.ico'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  paycheck_exchange: 8000
+breadcrumb_title: 0
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  hero: ''
+  content: ''
+  first_top: ''
+  first_left: ''
+  first_middle: ''
+  first_right: ''
+  first_bottom: ''
+  second_top: ''
+  second_left: ''
+  second_middle: ''
+  second_right: ''
+  second_bottom: ''
+  third_top: ''
+  third_left: ''
+  third_middle: ''
+  third_right: ''
+  third_bottom: ''
+  fourth_top: ''
+  fourth_left: ''
+  fourth_middle: ''
+  fourth_right: ''
+  fourth_bottom: ''
+  footer: ''
+button_iconize: 0
+table_responsive: '-1'
+table: ''
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+breadcrumb: '0'

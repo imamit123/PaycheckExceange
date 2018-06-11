@@ -1,0 +1,33 @@
+uuid: 25c63cf5-7122-4f49-8532-6964be26f276
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front
+  content:
+    - 'block_content:basic:f130a034-df44-4bee-b8d1-245e14cf2c61'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: buynowpaylaterblock
+theme: paycheck_exchange
+region: fourth_left
+weight: 0
+provider: null
+plugin: 'block_content:f130a034-df44-4bee-b8d1-245e14cf2c61'
+settings:
+  id: 'block_content:f130a034-df44-4bee-b8d1-245e14cf2c61'
+  label: 'Buy Now Pay Later block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front
+    context_mapping: {  }

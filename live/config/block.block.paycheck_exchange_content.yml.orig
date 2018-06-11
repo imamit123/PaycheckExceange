@@ -1,0 +1,22 @@
+uuid: 5dddf58b-9c45-4a93-ad04-7775cf5d9c7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - paycheck_exchange
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: paycheck_exchange_content
+theme: paycheck_exchange
+region: content
+weight: -11
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: d2dcefb0-c830-4871-91e8-2213ccf23a5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - profile
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: profile.field_rp_referral_partner_uid
+field_name: field_rp_referral_partner_uid
+entity_type: profile
+type: string
+settings:
+  max_length: 128
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

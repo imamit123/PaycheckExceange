@@ -1,0 +1,36 @@
+uuid: b5ee79fe-bb87-46fe-882e-a95ec709eb49
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commission_rate.field_referral_partner
+    - pcx_rates.commission_rate_type.commission_rate
+id: commission_rate.commission_rate.field_referral_partner
+field_name: field_referral_partner
+entity_type: commission_rate
+bundle: commission_rate
+label: 'Referral Partner'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        referral_partner: referral_partner
+        paycheck_exc: '0'
+        prospect: '0'
+        organization: '0'
+        employee: '0'
+        administrator: '0'
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

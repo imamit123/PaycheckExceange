@@ -1,0 +1,22 @@
+uuid: ff8ac651-5596-4aea-b01f-587afa4247c6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - paycheck_exchange
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: paycheck_exchange_local_tasks
+theme: paycheck_exchange
+region: header
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: 2283a198-1854-4d71-97ec-23732e320656
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_rp_date_of_hire
+    - profile.type.referral_partner
+  module:
+    - datetime
+id: profile.referral_partner.field_rp_date_of_hire
+field_name: field_rp_date_of_hire
+entity_type: profile
+bundle: referral_partner
+label: 'Date of Hire'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,19 @@
+uuid: 362346de-2eb4-425c-9ce0-76f13008ee1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_alt_email
+    - profile.type.employee
+id: profile.employee.field_emp_alt_email
+field_name: field_emp_alt_email
+entity_type: profile
+bundle: employee
+label: 'Alt. Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

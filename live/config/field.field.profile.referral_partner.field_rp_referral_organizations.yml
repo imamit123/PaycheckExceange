@@ -1,0 +1,28 @@
+uuid: afc06825-d46c-4bad-b280-268431195abb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_rp_referral_organizations
+    - pcx_orgs.organization_type.organization
+    - profile.type.referral_partner
+id: profile.referral_partner.field_rp_referral_organizations
+field_name: field_rp_referral_organizations
+entity_type: profile
+bundle: referral_partner
+label: 'Referral Organizations'
+description: "Start typing the name of the organization that was referred by this partner. Note that the organization must already exist before creating this partner account.\r\n\r\nYou can <a target=\"_blank\" href=\"/admin/structure/organization/add/organization\">add a new organization now</a> (in a new window/tab) then come back to search for the new organization."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:organization'
+  handler_settings:
+    target_bundles:
+      organization: organization
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

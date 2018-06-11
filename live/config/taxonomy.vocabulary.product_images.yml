@@ -1,0 +1,9 @@
+uuid: 829f0a71-8436-41fb-9fac-a9ab26072b4d
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product Images'
+vid: product_images
+description: ''
+hierarchy: 0
+weight: 0

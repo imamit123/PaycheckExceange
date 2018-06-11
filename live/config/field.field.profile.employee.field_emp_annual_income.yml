@@ -1,0 +1,23 @@
+uuid: 31fb9263-d74b-41d7-bff1-02eea231e68e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_annual_income
+    - profile.type.employee
+id: profile.employee.field_emp_annual_income
+field_name: field_emp_annual_income
+entity_type: profile
+bundle: employee
+label: 'Annual Income'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: $
+  suffix: ''
+field_type: decimal

@@ -1,0 +1,23 @@
+uuid: 65345be2-c6c6-401b-91d0-f05437f4cdf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_type
+    - node.type.page
+id: node.page.field_page_type
+field_name: field_page_type
+entity_type: node
+bundle: page
+label: 'Delete Me'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_vocabulary'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

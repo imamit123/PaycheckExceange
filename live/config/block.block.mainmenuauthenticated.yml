@@ -1,0 +1,31 @@
+uuid: f255baca-51b5-4b11-8e5c-e63ee50c3a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.authenticated
+    - system.menu.main-menu---authenticated
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - paycheck_exchange
+id: mainmenuauthenticated
+theme: paycheck_exchange
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: 'system_menu_block:main-menu---authenticated'
+settings:
+  id: 'system_menu_block:main-menu---authenticated'
+  label: 'Main Menu - Authenticated'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: authenticated
+    context_mapping: {  }

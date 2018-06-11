@@ -1,0 +1,21 @@
+uuid: 8191d3db-a198-424e-b774-b342158a9640
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_rp_gender
+    - profile.type.referral_partner
+  module:
+    - options
+id: profile.referral_partner.field_rp_gender
+field_name: field_rp_gender
+entity_type: profile
+bundle: referral_partner
+label: Gender
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

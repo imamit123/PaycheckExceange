@@ -1,0 +1,33 @@
+uuid: bfcb2dd9-d317-4ced-8413-ea91cdfe9dc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front
+  content:
+    - 'block_content:link_block:811c8cbc-fb90-4b51-afcc-cec281263789'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: getstarted
+theme: paycheck_exchange
+region: fourth_bottom
+weight: 0
+provider: null
+plugin: 'block_content:811c8cbc-fb90-4b51-afcc-cec281263789'
+settings:
+  id: 'block_content:811c8cbc-fb90-4b51-afcc-cec281263789'
+  label: 'Get started'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front
+    context_mapping: {  }

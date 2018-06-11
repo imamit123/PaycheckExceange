@@ -1,0 +1,15 @@
+uuid: 42eae605-41a2-432b-9cdf-1dd477bd955a
+name: 'Paycheck Exchange'
+mail: inquiries@paycheckexchange.com
+slogan: 'The new standard in payroll deduction purchasing.'
+page:
+  403: /node/3
+  404: /node/4
+  front: /node/5
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+mail_notification: ''

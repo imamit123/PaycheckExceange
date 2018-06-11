@@ -1,0 +1,64 @@
+uuid: 54631a92-3d10-4ed3-94b5-ef20fd1041b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organization.field_organization_commissions
+    - pcx_orgs.organization_type.organization
+    - views.view.commission_reference_view_for_org_entityies
+  module:
+    - viewfield
+id: organization.organization.field_organization_commissions
+field_name: field_organization_commissions
+entity_type: organization
+bundle: organization
+label: 'Organization Commissions'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    token_help: ''
+    display_id: block_2
+    arguments: '[organization:id]'
+    target_uuid: c57ca545-a43e-4078-a2d1-e6c14e7c5887
+default_value_callback: ''
+settings:
+  force_default: 1
+  allowed_views:
+    commission_reference_view_for_org_entityies: commission_reference_view_for_org_entityies
+    commerce_activity: 0
+    basic_page_admin: 0
+    commerce_cart_block: 0
+    commerce_cart_form: 0
+    commerce_carts: 0
+    catalog_taxonomy: 0
+    catalog_category_browser_block: 0
+    commerce_checkout_order_summary: 0
+    content: 0
+    block_content: 0
+    files: 0
+    frontpage: 0
+    commerce_order_item_table: 0
+    commerce_orders: 0
+    organizations_admin_view: 0
+    user_admin_people: 0
+    product_display_view: 0
+    commerce_products: 0
+    profiles: 0
+    comments_recent: 0
+    content_recent: 0
+    commerce_stores: 0
+    taxonomy_term: 0
+    commerce_user_orders: 0
+    who_s_new: 0
+    who_s_online: 0
+  allowed_display_types:
+    block: block
+    embed: 0
+    feed: 0
+    default: 0
+    page: 0
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

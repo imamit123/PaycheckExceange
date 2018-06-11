@@ -1,0 +1,24 @@
+uuid: 58289bbd-4837-4796-adc5-df8336e02404
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - field_permissions
+    - pcx_orgs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: organization.field_org_benefits_renewal_date
+field_name: field_org_benefits_renewal_date
+entity_type: organization
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

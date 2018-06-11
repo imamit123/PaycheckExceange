@@ -1,0 +1,33 @@
+uuid: f9bdb4ce-8144-454e-874e-5c190873a6ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.authenticated_home_page
+  content:
+    - 'block_content:basic:db8b1e2c-6dc1-42de-8f90-900519d410ea'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: membershipbenefitsauthblock
+theme: paycheck_exchange
+region: front_right
+weight: -24
+provider: null
+plugin: 'block_content:db8b1e2c-6dc1-42de-8f90-900519d410ea'
+settings:
+  id: 'block_content:db8b1e2c-6dc1-42de-8f90-900519d410ea'
+  label: 'Membership Benefits - Auth Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: authenticated_home_page
+    context_mapping: {  }

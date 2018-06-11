@@ -1,0 +1,23 @@
+uuid: 96ba4bcf-1cae-4f23-95e4-4345ff24c2bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_product_msrp
+  module:
+    - commerce_price
+id: commerce_product.default.field_product_msrp
+field_name: field_product_msrp
+entity_type: commerce_product
+bundle: default
+label: MSRP
+description: 'Suggested Retail Price'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_currencies:
+    USD: USD
+field_type: commerce_price

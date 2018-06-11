@@ -1,0 +1,21 @@
+uuid: 5ff305d0-bf6b-476b-bb5a-690a1ea0a5fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_marital_status
+    - profile.type.employee
+  module:
+    - options
+id: profile.employee.field_emp_marital_status
+field_name: field_emp_marital_status
+entity_type: profile
+bundle: employee
+label: 'Marital Status'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

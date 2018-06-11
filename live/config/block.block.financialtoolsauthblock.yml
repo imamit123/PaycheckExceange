@@ -1,0 +1,33 @@
+uuid: 19d49614-78d4-4314-affa-a9637edea4ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.authenticated_home_page
+  content:
+    - 'block_content:link_block:cae5d6d6-7d0a-431b-a6cd-bd681389e1b1'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: financialtoolsauthblock
+theme: paycheck_exchange
+region: front_right
+weight: -23
+provider: null
+plugin: 'block_content:cae5d6d6-7d0a-431b-a6cd-bd681389e1b1'
+settings:
+  id: 'block_content:cae5d6d6-7d0a-431b-a6cd-bd681389e1b1'
+  label: 'Financial Tools - Auth block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: authenticated_home_page
+    context_mapping: {  }

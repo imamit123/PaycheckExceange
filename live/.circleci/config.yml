@@ -1,0 +1,26 @@
+# PHP CircleCI 2.0 configuration file
+version: 2
+jobs:
+  build:
+    docker:
+      - image: ubuntu:latest
+    branches:
+      only:
+        - dev
+        - master
+    steps:
+      - run:
+          name: Install ssh client
+          command: apt-get update && apt-get install -y openssh-client
+      - deploy:
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "dev" ]; then
+              ssh -o "StrictHostKeyChecking=no" payxchgadmin@52.170.119.36 'eval $(ssh-agent -s) && ssh-add .ssh/deploy_client_paycheck_exchange && cd /var/www/dev && git pull'
+            elif [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ssh -o "StrictHostKeyChecking=no" payxchgadmin@52.170.119.36 'eval $(ssh-agent -s) && ssh-add .ssh/deploy_client_paycheck_exchange && cd /var/www/live && git pull'
+            else
+              echo "${CIRCLE_BRANCH}"
+            fi
+notify:
+  webhooks:
+    - url: https://outlook.office.com/webhook/98b6d81a-4eeb-4190-b133-4f2f21381edb@76014188-7ab3-4117-90a7-21a1d3d32622/IncomingWebhook/f79c888248294ba49085903108b64d19/b44e2c20-d72a-4362-8a81-1d4ed8c141dd

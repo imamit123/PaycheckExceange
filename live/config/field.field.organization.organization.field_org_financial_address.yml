@@ -1,0 +1,36 @@
+uuid: d82d1bce-19a4-495f-976a-8e371c994d2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organization.field_org_financial_address
+    - pcx_orgs.organization_type.organization
+  module:
+    - address
+id: organization.organization.field_org_financial_address
+field_name: field_org_financial_address
+entity_type: organization
+bundle: organization
+label: 'Financial Address'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    US: US
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    sortingCode: sortingCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    organization: organization
+    givenName: '0'
+    additionalName: '0'
+    familyName: '0'
+  langcode_override: ''
+field_type: address

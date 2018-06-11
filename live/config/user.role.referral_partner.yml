@@ -1,0 +1,43 @@
+uuid: 852f25d5-14c8-4717-973b-d176ae54c506
+langcode: en
+status: true
+dependencies: {  }
+id: referral_partner
+label: 'Referral Partner'
+weight: -8
+is_admin: null
+permissions:
+  - 'create field_alt_email'
+  - 'create field_alt_phone'
+  - 'create field_email'
+  - 'create field_home_address'
+  - 'create field_phone'
+  - 'create field_rp_alt_email'
+  - 'create field_rp_alt_phone'
+  - 'create field_rp_home_address'
+  - 'create field_rp_phone'
+  - 'edit own field_alt_email'
+  - 'edit own field_alt_phone'
+  - 'edit own field_email'
+  - 'edit own field_home_address'
+  - 'edit own field_phone'
+  - 'edit own field_rp_alt_email'
+  - 'edit own field_rp_alt_phone'
+  - 'edit own field_rp_home_address'
+  - 'edit own field_rp_phone'
+  - 'update own referral_partner profile'
+  - 'view commerce_product'
+  - 'view own field_alt_email'
+  - 'view own field_alt_phone'
+  - 'view own field_email'
+  - 'view own field_home_address'
+  - 'view own field_phone'
+  - 'view own field_rp_alt_email'
+  - 'view own field_rp_alt_phone'
+  - 'view own field_rp_date_of_birth'
+  - 'view own field_rp_date_of_hire'
+  - 'view own field_rp_gender'
+  - 'view own field_rp_home_address'
+  - 'view own field_rp_phone'
+  - 'view own referral_partner profile'
+  - 'view profile'

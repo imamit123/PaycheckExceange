@@ -1,0 +1,14 @@
+uuid: 69d2656c-675a-4213-abac-24c70fb2e348
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.catalog-menu
+    - taxonomy.vocabulary.catalog_category
+id: catalog_browser_taxonomy_menu_
+label: 'Catalog Browser (Taxonomy Menu)'
+vocabulary: catalog_category
+menu: catalog-menu
+expanded: false
+depth: 8
+menu_parent: 'catalog-menu:'

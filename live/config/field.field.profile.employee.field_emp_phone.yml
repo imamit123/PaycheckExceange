@@ -1,0 +1,21 @@
+uuid: 3d133517-eaf8-441d-b067-cce0def8009f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_phone
+    - profile.type.employee
+  module:
+    - telephone
+id: profile.employee.field_emp_phone
+field_name: field_emp_phone
+entity_type: profile
+bundle: employee
+label: Phone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

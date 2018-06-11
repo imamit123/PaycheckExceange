@@ -1,0 +1,21 @@
+uuid: 3c082d5d-5abc-46ae-899b-afc4afee14d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organization.field_org_financial_phone
+    - pcx_orgs.organization_type.organization
+  module:
+    - telephone
+id: organization.organization.field_org_financial_phone
+field_name: field_org_financial_phone
+entity_type: organization
+bundle: organization
+label: 'Financial Phone'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

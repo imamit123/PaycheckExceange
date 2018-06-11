@@ -1,0 +1,28 @@
+uuid: b2d5627d-122b-45fb-ab1c-cc050a16c5d7
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.category
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - paycheck_exchange
+id: category
+theme: paycheck_exchange
+region: content
+weight: -17
+provider: null
+plugin: 'facet_block:category'
+settings:
+  id: 'facet_block:category'
+  label: Category
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

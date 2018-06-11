@@ -1,0 +1,33 @@
+uuid: 63a76e7a-bc48-4bae-8e7d-bad84f289dec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front
+  content:
+    - 'block_content:basic:67821e68-a535-4ab9-b5a3-e3c08e3e8597'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: buythestuffyouneedblock
+theme: paycheck_exchange
+region: second_top
+weight: 0
+provider: null
+plugin: 'block_content:67821e68-a535-4ab9-b5a3-e3c08e3e8597'
+settings:
+  id: 'block_content:67821e68-a535-4ab9-b5a3-e3c08e3e8597'
+  label: 'Buy the stuff you need block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front
+    context_mapping: {  }

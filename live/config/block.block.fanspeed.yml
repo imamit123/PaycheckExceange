@@ -1,0 +1,28 @@
+uuid: e3f38826-6478-47e7-afc7-0073695e31fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.fan_speed
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - paycheck_exchange
+id: fanspeed
+theme: paycheck_exchange
+region: sidebar_first
+weight: -14
+provider: null
+plugin: 'facet_block:fan_speed'
+settings:
+  id: 'facet_block:fan_speed'
+  label: 'Fan Speed'
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

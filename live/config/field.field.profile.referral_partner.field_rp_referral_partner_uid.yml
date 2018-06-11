@@ -1,0 +1,19 @@
+uuid: 80f8317e-42b8-4511-b967-5bb57bf3fe77
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_rp_referral_partner_uid
+    - profile.type.referral_partner
+id: profile.referral_partner.field_rp_referral_partner_uid
+field_name: field_rp_referral_partner_uid
+entity_type: profile
+bundle: referral_partner
+label: 'Referral Partner UID'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

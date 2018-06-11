@@ -1,0 +1,28 @@
+uuid: 6e08db02-2818-4d04-84d4-f7134519c116
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.wireless_subwoofer
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.attribute_wireless_subwoofer
+id: commerce_product_variation.default.attribute_wireless_subwoofer
+field_name: attribute_wireless_subwoofer
+entity_type: commerce_product_variation
+bundle: default
+label: 'Wireless Subwoofer'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      wireless_subwoofer: wireless_subwoofer
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

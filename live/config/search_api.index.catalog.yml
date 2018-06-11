@@ -1,0 +1,66 @@
+uuid: dd57d252-75a1-42a6-86be-cd7e4e584e59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.field_product_brand
+    - field.storage.commerce_product.field_product_category
+    - field.storage.commerce_product.variations
+    - search_api.server.search_server_db_
+  module:
+    - commerce_product
+    - search_api
+id: catalog
+name: Catalog
+description: ''
+read_only: false
+field_settings:
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: string
+  field_product_brand:
+    label: Brand
+    datasource_id: 'entity:commerce_product'
+    property_path: field_product_brand
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_brand
+  field_product_category:
+    label: Category
+    datasource_id: 'entity:commerce_product'
+    property_path: field_product_category
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_category
+  number:
+    label: Price
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:number'
+    type: decimal
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  rendered_item: {  }
+tracker_settings:
+  default: {  }
+options:
+  index_directly: true
+  cron_limit: 50
+server: search_server_db_

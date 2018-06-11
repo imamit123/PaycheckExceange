@@ -1,0 +1,64 @@
+uuid: 50510773-f6c1-4ecc-8e8f-eddbd2f43f1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.catalog_category.field_category_image
+    - field.field.taxonomy_term.catalog_category.field_category_markup_override
+    - taxonomy.vocabulary.catalog_category
+  module:
+    - ds
+    - remote_image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      left:
+        - field_category_markup_override
+        - description
+        - field_category_image
+id: taxonomy_term.catalog_category.default
+targetEntityType: taxonomy_term
+bundle: catalog_category
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_category_image:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: remote_image
+    region: content
+  field_category_markup_override:
+    weight: 0
+    label: inline
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+hidden: {  }

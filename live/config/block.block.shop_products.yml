@@ -1,0 +1,33 @@
+uuid: d3110dcf-886b-4cc0-9209-e5b76862e716
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.authenticated
+  content:
+    - 'block_content:link_block:0b955efd-d223-46a1-bfe3-6e5456d28689'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: shop_products
+theme: paycheck_exchange
+region: commerce
+weight: 0
+provider: null
+plugin: 'block_content:0b955efd-d223-46a1-bfe3-6e5456d28689'
+settings:
+  id: 'block_content:0b955efd-d223-46a1-bfe3-6e5456d28689'
+  label: 'Shop products - Auth block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: authenticated
+    context_mapping: {  }

@@ -1,0 +1,28 @@
+uuid: a12ed1ae-ff19-437f-88cd-794a1cb8ded9
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.variations_product_variation_price_number
+  module:
+    - block_visibility_groups
+    - facets
+  theme:
+    - paycheck_exchange
+id: variationsproductvariationpricenumber
+theme: paycheck_exchange
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'facet_block:variations_product_variation_price_number'
+settings:
+  id: 'facet_block:variations_product_variation_price_number'
+  label: Price
+  provider: facets
+  label_display: visible
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

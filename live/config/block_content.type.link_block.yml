@@ -1,0 +1,8 @@
+uuid: bf9faad2-df85-45b6-a68b-4d38e46abd9b
+langcode: en
+status: true
+dependencies: {  }
+id: link_block
+label: 'Link block'
+revision: 0
+description: 'A block type of a button link.'

@@ -1,0 +1,14 @@
+uuid: 419d2590-ed17-4979-b244-3ce2348bc693
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.referral_partner
+  module:
+    - user
+id: user_add_role_action.referral_partner
+label: 'Add the Referral Partner role to the selected users'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: referral_partner

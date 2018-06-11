@@ -1,0 +1,19 @@
+uuid: 60a448c6-96c5-4cce-8bbb-562ad9eb5b2c
+langcode: en
+status: true
+dependencies: {  }
+id: employee
+label: Employee
+registration: false
+multiple: false
+roles:
+  employee: employee
+  paycheck_exc: '0'
+  prospect: '0'
+  referral_partner: '0'
+  organization: '0'
+  administrator: '0'
+  authenticated: '0'
+weight: 0
+use_revisions: false
+description: ''

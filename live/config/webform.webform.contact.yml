@@ -1,0 +1,190 @@
+uuid: f356c7ae-a75f-4420-9404-79ea2650f03b
+langcode: en
+status: open
+dependencies:
+  enforced:
+    module:
+      - webform
+  module:
+    - honeypot
+third_party_settings:
+  honeypot:
+    honeypot: true
+    time_restriction: true
+_core:
+  default_config_hash: TXbSSS0lYoFb39dSF4qf9kvAtJAkqMBR-Dg8drrFJko
+open: null
+close: null
+uid: null
+template: false
+id: contact
+title: 'Contact Us'
+description: ''
+category: ''
+elements: "first_name:\n  '#type': textfield\n  '#title': 'First Name'\n  '#required': true\nname:\n  '#type': textfield\n  '#title': 'Last Name'\n  '#default_value': '[webform-authenticated-user:display-name]'\n  '#required': true\nemail:\n  '#type': email\n  '#title': Email\n  '#default_value': '[webform-authenticated-user:mail]'\n  '#required': true\nphone:\n  '#type': tel\n  '#title': Phone\n  '#required': true\nmessage:\n  '#title': Message\n  '#type': textarea\n  '#required': true\n  '#test': 'Please ignore this email.'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Send message'\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  page: true
+  page_submit_path: contact
+  page_confirm_path: /thank_you
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  submission_label: ''
+  submission_log: false
+  submission_user_columns:
+    - serial
+    - created
+    - remote_addr
+    - element__first_name
+    - element__name
+    - element__email
+    - element__phone
+    - element__message
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_complete: true
+  wizard_complete_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: 'Thank you for contacting us. '
+  confirmation_message: ''
+  confirmation_url: '<front>'
+  confirmation_attributes: {  }
+  confirmation_back: false
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_message: ''
+  purge: none
+  purge_days: null
+  entity_limit_total: null
+  entity_limit_user: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  email_confirmation:
+    id: email
+    label: 'Contact Us Confirmation'
+    handler_id: email_confirmation
+    status: true
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      subject: 'Paycheck Exchange Contact Us Confirmation'
+      body: "[webform_submission:values:first_name:raw] [webform_submission:values:name:raw], \n\nWe have received your request.  Thank you for contacting us. \n\n[site:name]\n[site:slogan]"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      html: false
+      attachments: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+  email_notification:
+    id: email
+    label: 'Contact Us Notification'
+    handler_id: email_notification
+    status: true
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: default
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: default
+      subject: 'You have a new contact us request'
+      body: "You have a new contact us request from: \n\n[webform_submission:values:first_name:raw] [webform_submission:values:name:raw] \n\n[webform_submission:values:email:raw] \n\n[webform_submission:values:phone:raw] \n\n[webform_submission:values:message:raw] \n\nSubmitted on [webform_submission:created]\n\n\n[site:name][site:slogan]\n"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      html: false
+      attachments: false
+      debug: false
+      reply_to: ''
+      return_path: ''

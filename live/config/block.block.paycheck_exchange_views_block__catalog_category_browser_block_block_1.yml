@@ -1,0 +1,40 @@
+uuid: 21d2907d-0828-4c31-a69d-59bd1cec3620
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.catalog_children
+    - views.view.catalog_category_browser_block
+  module:
+    - block_visibility_groups
+    - user
+    - views
+  theme:
+    - paycheck_exchange
+id: paycheck_exchange_views_block__catalog_category_browser_block_block_1
+theme: paycheck_exchange
+region: sidebar_first
+weight: -23
+provider: null
+plugin: 'views_block:catalog_category_browser_block-block_1'
+settings:
+  id: 'views_block:catalog_category_browser_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: catalog_children
+    context_mapping: {  }

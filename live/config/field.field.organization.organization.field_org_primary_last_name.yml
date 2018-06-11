@@ -1,0 +1,19 @@
+uuid: e43704d7-af79-4cc0-b644-1572f86fb314
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organization.field_org_primary_last_name
+    - pcx_orgs.organization_type.organization
+id: organization.organization.field_org_primary_last_name
+field_name: field_org_primary_last_name
+entity_type: organization
+bundle: organization
+label: 'Primary Contact Last Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 155c97ce-000a-4d60-b292-ece3187b9bc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organization_type
+id: taxonomy_term.organization_type.default
+targetEntityType: taxonomy_term
+bundle: organization_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

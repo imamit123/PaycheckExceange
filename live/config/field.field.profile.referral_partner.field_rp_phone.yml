@@ -1,0 +1,21 @@
+uuid: cb73a31f-a64c-43e2-b162-5c91bd36f7b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_rp_phone
+    - profile.type.referral_partner
+  module:
+    - telephone
+id: profile.referral_partner.field_rp_phone
+field_name: field_rp_phone
+entity_type: profile
+bundle: referral_partner
+label: Phone
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -1,0 +1,8 @@
+uuid: 194c6f34-7104-4d6f-b3dc-ded05ee6d69b
+langcode: en
+status: true
+dependencies: {  }
+id: main-menu---authenticated
+label: 'Main Menu - Authenticated'
+description: ''
+locked: false

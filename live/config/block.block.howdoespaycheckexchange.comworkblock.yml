@@ -1,0 +1,33 @@
+uuid: 821e8bde-6ac7-45ab-842e-1be815b7f709
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front
+  content:
+    - 'block_content:basic:cb75be02-48ec-4114-ae97-e67c85a7c96e'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: howdoespaycheckexchange.comworkblock
+theme: paycheck_exchange
+region: fourth_top
+weight: 0
+provider: null
+plugin: 'block_content:cb75be02-48ec-4114-ae97-e67c85a7c96e'
+settings:
+  id: 'block_content:cb75be02-48ec-4114-ae97-e67c85a7c96e'
+  label: 'How does PaycheckExchange.com work block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front
+    context_mapping: {  }

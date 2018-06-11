@@ -1,0 +1,9 @@
+uuid: 113fc8da-defc-4df5-80d9-89f97ef89808
+langcode: en
+status: true
+dependencies: {  }
+name: 'Organization Status'
+vid: organization_status
+description: ''
+hierarchy: 0
+weight: 0

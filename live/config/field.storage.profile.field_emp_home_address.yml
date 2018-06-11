@@ -1,0 +1,23 @@
+uuid: bc81e1d2-5c5a-4d47-929e-d0bf1a7d236e
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - field_permissions
+    - profile
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: profile.field_emp_home_address
+field_name: field_emp_home_address
+entity_type: profile
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

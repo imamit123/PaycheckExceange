@@ -1,0 +1,26 @@
+uuid: 020563de-c6fd-4c21-af4c-8516764b4841
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_visibility_groups
+    - responsive_menu
+  theme:
+    - paycheck_exchange
+id: responsivemenumobileicon
+theme: paycheck_exchange
+region: navigation
+weight: -24
+provider: null
+plugin: responsive_menu_toggle
+settings:
+  id: responsive_menu_toggle
+  label: 'Responsive menu mobile icon'
+  provider: responsive_menu
+  label_display: '0'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

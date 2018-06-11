@@ -1,0 +1,36 @@
+uuid: 4864889c-9acc-4a84-9830-d52add669ee9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_home_address
+    - profile.type.employee
+  module:
+    - address
+id: profile.employee.field_emp_home_address
+field_name: field_emp_home_address
+entity_type: profile
+bundle: employee
+label: 'Home Address'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    US: US
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    sortingCode: sortingCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    organization: '0'
+    givenName: '0'
+    additionalName: '0'
+    familyName: '0'
+  langcode_override: ''
+field_type: address

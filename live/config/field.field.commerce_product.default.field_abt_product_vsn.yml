@@ -1,0 +1,19 @@
+uuid: 31e1a286-51f5-4155-83f5-5ab2bee3e690
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_abt_product_vsn
+id: commerce_product.default.field_abt_product_vsn
+field_name: field_abt_product_vsn
+entity_type: commerce_product
+bundle: default
+label: VSN
+description: 'Abt Model Number'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,56 @@
+uuid: ccf28547-bf27-4651-81e9-30400e2b3e92
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - core.entity_view_mode.commerce_product.product_list_view
+    - field.field.commerce_product.default.body
+    - field.field.commerce_product.default.field_abt_product_vsn
+    - field.field.commerce_product.default.field_product_brand
+    - field.field.commerce_product.default.field_product_category
+    - field.field.commerce_product.default.field_product_features
+    - field.field.commerce_product.default.field_product_mpn
+    - field.field.commerce_product.default.field_product_msrp
+    - field.field.commerce_product.default.field_product_stock_level
+    - field.field.commerce_product.default.field_remote_image
+    - field.field.commerce_product.default.stores
+    - field.field.commerce_product.default.variations
+  module:
+    - commerce_product
+    - commerce_wishlist
+    - ds
+_core:
+  default_config_hash: gT03TFcuSod4d9uPQNs_gqK1F1QZ0Ray5CBYW0BNLnk
+id: commerce_product.default.product_list_view
+targetEntityType: commerce_product
+bundle: default
+mode: product_list_view
+content:
+  variations:
+    type: commerce_add_to_cart
+    weight: 0
+    region: content
+    label: visually_hidden
+    settings:
+      combine: true
+    third_party_settings:
+      commerce_wishlist:
+        show_wishlist: '1'
+        weight_wishlist: '99'
+        label_wishlist: ''
+      ds:
+        ds_limit: ''
+hidden:
+  body: true
+  created: true
+  field_abt_product_vsn: true
+  field_product_brand: true
+  field_product_category: true
+  field_product_features: true
+  field_product_mpn: true
+  field_product_msrp: true
+  field_product_stock_level: true
+  field_remote_image: true
+  stores: true
+  uid: true

@@ -1,0 +1,28 @@
+uuid: db04541f-1310-4feb-b666-c0a323cbfc5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organization.field_org_type_of_organiziation
+    - pcx_orgs.organization_type.organization
+    - taxonomy.vocabulary.organization_type
+id: organization.organization.field_org_type_of_organiziation
+field_name: field_org_type_of_organiziation
+entity_type: organization
+bundle: organization
+label: 'Type of Organiziation'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      organization_type: organization_type
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

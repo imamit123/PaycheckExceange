@@ -1,0 +1,122 @@
+uuid: 97c87b06-0603-44ea-b06c-0019f3d5b7f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.profile.referral_partner.field_referral_partner_commissio
+    - field.field.profile.referral_partner.field_rp_alt_email
+    - field.field.profile.referral_partner.field_rp_alt_phone
+    - field.field.profile.referral_partner.field_rp_date_of_birth
+    - field.field.profile.referral_partner.field_rp_date_of_hire
+    - field.field.profile.referral_partner.field_rp_gender
+    - field.field.profile.referral_partner.field_rp_home_address
+    - field.field.profile.referral_partner.field_rp_phone
+    - field.field.profile.referral_partner.field_rp_referral_organizations
+    - field.field.profile.referral_partner.field_rp_referral_partner_uid
+    - field.field.profile.referral_partner.field_rp_referred_by_partner
+    - field.field.profile.referral_partner.field_rp_referred_organizations
+    - profile.type.referral_partner
+  module:
+    - address
+    - datetime
+    - options
+    - telephone
+    - viewfield
+id: profile.referral_partner.default
+targetEntityType: profile
+bundle: referral_partner
+mode: default
+content:
+  field_referral_partner_commissio:
+    weight: 10
+    label: above
+    settings:
+      view_title: hidden
+      always_build_output: '1'
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+  field_rp_alt_email:
+    weight: 2
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_rp_alt_phone:
+    weight: 3
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_rp_date_of_birth:
+    weight: 4
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_rp_date_of_hire:
+    weight: 5
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_rp_gender:
+    weight: 6
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_rp_home_address:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_rp_phone:
+    weight: 1
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_rp_referral_partner_uid:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_rp_referred_by_partner:
+    weight: 8
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_rp_referred_organizations:
+    weight: 9
+    label: above
+    settings:
+      view_title: hidden
+      always_build_output: '1'
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+hidden:
+  field_rp_referral_organizations: true

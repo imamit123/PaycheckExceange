@@ -1,0 +1,33 @@
+uuid: e4ee17fa-309d-420b-b308-37e88fcba087
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front
+  content:
+    - 'block_content:basic:03adc0c5-094f-4ab9-86bc-6fd72bf2211f'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: manageincomeblock
+theme: paycheck_exchange
+region: first_left
+weight: 0
+provider: null
+plugin: 'block_content:03adc0c5-094f-4ab9-86bc-6fd72bf2211f'
+settings:
+  id: 'block_content:03adc0c5-094f-4ab9-86bc-6fd72bf2211f'
+  label: 'Manage Income block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front
+    context_mapping: {  }

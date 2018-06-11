@@ -1,0 +1,20 @@
+uuid: 22b3f326-b15c-4e8b-a20a-8f605fb6a520
+langcode: en
+status: true
+dependencies:
+  theme:
+    - paycheck_exchange
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: paycheck_exchange_page_title
+theme: paycheck_exchange
+region: header
+weight: -11
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

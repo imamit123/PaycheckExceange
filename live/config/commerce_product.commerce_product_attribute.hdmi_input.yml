@@ -1,0 +1,7 @@
+uuid: 2af65b33-ea0d-4991-9c74-b0a2c9fd5649
+langcode: en
+status: true
+dependencies: {  }
+id: hdmi_input
+label: 'HDMI Input'
+elementType: commerce_product_rendered_attribute

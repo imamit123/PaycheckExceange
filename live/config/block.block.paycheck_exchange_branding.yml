@@ -1,0 +1,25 @@
+uuid: dd0746c9-0abf-40cb-88b9-4db250db5aac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - paycheck_exchange
+_core:
+  default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
+id: paycheck_exchange_branding
+theme: paycheck_exchange
+region: navigation
+weight: -24
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

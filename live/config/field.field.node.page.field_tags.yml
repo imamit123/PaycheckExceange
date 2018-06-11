@@ -1,0 +1,28 @@
+uuid: 44109a0a-df1c-46e7-95db-a975dd266532
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.page
+    - taxonomy.vocabulary.payexch_site_section
+id: node.page.field_tags
+field_name: field_tags
+entity_type: node
+bundle: page
+label: 'Type of Page'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      payexch_site_section: payexch_site_section
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

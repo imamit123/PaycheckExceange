@@ -1,0 +1,27 @@
+uuid: f7a2e12a-38e3-43a6-817d-7f523a20fabb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.link_block
+    - field.field.block_content.link_block.field_link
+  module:
+    - link
+id: block_content.link_block.default
+targetEntityType: block_content
+bundle: link_block
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

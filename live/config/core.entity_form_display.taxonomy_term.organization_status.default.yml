@@ -1,0 +1,40 @@
+uuid: b987d587-837a-433a-b722-698f163537e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.organization_status
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_description:
+      children:
+        - name
+      parent_name: ''
+      weight: 0
+      format_type: tab
+      format_settings:
+        label: Description
+        formatter: open
+        description: "<p>An\_<strong>Employer</strong>\_is any business or payroll company whose\_<strong>Employees</strong>\_are able to take advantage of Paycheck Exchange's offerings. \_The Employer has signed an agreement, has been provided log-in information.</p>\n\n<p><strong>States/Status</strong></p>\n\n<p style=\"margin-bottom: 0px; padding: 0px;\">Active in good standing</p>\n\n<ul>\n\t<li style=\"margin-bottom: 0px; padding: 0px;\">Employer confirmed with Paycheck Exchange, has a current agreement, and is not in default financially.\_</li>\n</ul>\n\n<p style=\"margin-bottom: 0px; padding: 0px;\">Active in poor standing</p>\n\n<ul>\n\t<li style=\"margin-bottom: 0px; padding: 0px;\">Employer confirmed with Paycheck Exchange, has a current agreement, but is in default financially. \_</li>\n</ul>\n\n<p style=\"margin-bottom: 0px; padding: 0px;\">Pending</p>\n\n<ul>\n\t<li style=\"margin-bottom: 0px; padding: 0px;\">Active but but purchase power is put on hold for some reason (i.e. funding, account set up)</li>\n</ul>\n\n<p style=\"margin-bottom: 0px; padding: 0px;\">Inactive</p>\n\n<ul>\n\t<li style=\"margin-bottom: 0px; padding: 0px;\">Employer no longer has a current agreement with Paycheck Exchange.</li>\n</ul>"
+        required_fields: true
+        id: ''
+        classes: ''
+      label: Description
+id: taxonomy_term.organization_status.default
+targetEntityType: taxonomy_term
+bundle: organization_status
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

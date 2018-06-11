@@ -1,0 +1,88 @@
+uuid: 4b2eafad-a151-4e41-b63e-69f1a95035ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.field_product_category
+    - field.storage.commerce_product.field_product_brand
+    - field.storage.commerce_product.variations
+    - field.storage.commerce_product.field_fan_speed
+    - search_api.server.search_server_db_
+  module:
+    - taxonomy
+    - search_api
+    - commerce_product
+id: product_index
+name: 'Product Index'
+description: ''
+read_only: false
+field_settings:
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+  field_product_category:
+    label: 'Catalog Category'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_product_category
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_category
+  field_product_brand:
+    label: Brand
+    datasource_id: 'entity:commerce_product'
+    property_path: field_product_brand
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_brand
+  tid:
+    label: 'Term ID'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_product_category:entity:tid'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_category
+      module:
+        - taxonomy
+  title:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: string
+  variations:
+    label: Variations
+    datasource_id: 'entity:commerce_product'
+    property_path: variations
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+  field_fan_speed:
+    label: 'Fan Speed'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_fan_speed
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_fan_speed
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  rendered_item: {  }
+tracker_settings:
+  default: {  }
+options:
+  index_directly: true
+  cron_limit: 50
+server: search_server_db_

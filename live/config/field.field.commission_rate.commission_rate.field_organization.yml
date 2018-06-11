@@ -1,0 +1,29 @@
+uuid: d6494dbc-b284-4a34-80d9-03a5835e25e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commission_rate.field_organization
+    - pcx_orgs.organization_type.organization
+    - pcx_rates.commission_rate_type.commission_rate
+id: commission_rate.commission_rate.field_organization
+field_name: field_organization
+entity_type: commission_rate
+bundle: commission_rate
+label: 'Organization '
+description: 'Name of organization commission rate is being applied to. '
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:organization'
+  handler_settings:
+    target_bundles:
+      organization: organization
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

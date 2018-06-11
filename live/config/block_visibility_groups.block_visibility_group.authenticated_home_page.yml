@@ -1,0 +1,17 @@
+uuid: 9fd4acfb-c4bc-45a0-9cec-b5666b9e395e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: authenticated_home_page
+label: 'Authenticated Home Page'
+logic: and
+conditions:
+  2eb5343b-07d6-41bc-a023-3e1e560fc2a4:
+    id: request_path
+    pages: /node/6
+    negate: false
+    context_mapping: {  }
+    uuid: 2eb5343b-07d6-41bc-a023-3e1e560fc2a4
+allow_other_conditions: false

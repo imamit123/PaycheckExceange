@@ -1,0 +1,19 @@
+uuid: 74b133d6-23d6-4566-bbe6-fe0813cb61b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organization.field_org_secondary_last_name
+    - pcx_orgs.organization_type.organization
+id: organization.organization.field_org_secondary_last_name
+field_name: field_org_secondary_last_name
+entity_type: organization
+bundle: organization
+label: 'Secondary Last Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

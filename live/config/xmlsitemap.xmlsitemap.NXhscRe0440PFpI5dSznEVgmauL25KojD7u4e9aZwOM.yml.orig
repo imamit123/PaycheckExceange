@@ -1,0 +1,11 @@
+uuid: aa24f78b-1cb3-46a8-a2c7-edd356206b3e
+langcode: en
+status: true
+dependencies: {  }
+id: NXhscRe0440PFpI5dSznEVgmauL25KojD7u4e9aZwOM
+label: 'http://dev-pay-xchg.pantheonsite.io/'
+chunks: 1
+links: 1
+max_filesize: 278
+context: {  }
+updated: 1506529966

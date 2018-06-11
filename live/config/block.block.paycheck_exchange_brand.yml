@@ -1,0 +1,22 @@
+uuid: e8fb3730-c7ce-46e2-a354-1ca96a53ffa9
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.brand
+  module:
+    - facets
+  theme:
+    - paycheck_exchange
+id: paycheck_exchange_brand
+theme: paycheck_exchange
+region: navigation
+weight: -22
+provider: null
+plugin: 'facet_block:brand'
+settings:
+  id: 'facet_block:brand'
+  label: Brand
+  provider: facets
+  label_display: visible
+visibility: {  }

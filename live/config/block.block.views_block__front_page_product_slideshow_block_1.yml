@@ -1,0 +1,31 @@
+uuid: 71fdc286-7402-4c36-b965-2139b34d5c30
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front
+    - views.view.front_page_product_slideshow
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - paycheck_exchange
+id: views_block__front_page_product_slideshow_block_1
+theme: paycheck_exchange
+region: third_bottom
+weight: 0
+provider: null
+plugin: 'views_block:front_page_product_slideshow-block_1'
+settings:
+  id: 'views_block:front_page_product_slideshow-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front
+    context_mapping: {  }

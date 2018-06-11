@@ -1,0 +1,9 @@
+uuid: 74669b8d-3dcb-4c8b-8949-5bb882bf413c
+langcode: en
+status: true
+dependencies: {  }
+name: 'Catalog Category'
+vid: catalog_category
+description: 'Used for Commerce Products'
+hierarchy: 1
+weight: 0

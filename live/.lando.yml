@@ -1,0 +1,8 @@
+name: pcx
+recipe: drupal8
+config:
+  webroot: web
+  via: nginx
+  php: '7.1'
+  drupal: true
+  drush: true

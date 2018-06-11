@@ -1,0 +1,42 @@
+uuid: 98ca79f4-2697-45e7-b64a-f70b954b3fe1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.commission_rate.commission_rate.field_commission_rate
+    - field.field.commission_rate.commission_rate.field_organization
+    - field.field.commission_rate.commission_rate.field_referral_partner
+    - pcx_rates.commission_rate_type.commission_rate
+id: commission_rate.commission_rate.default
+targetEntityType: commission_rate
+bundle: commission_rate
+mode: default
+content:
+  field_commission_rate:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_organization:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_referral_partner:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  name: true
+  user_id: true

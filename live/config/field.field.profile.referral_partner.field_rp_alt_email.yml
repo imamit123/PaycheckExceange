@@ -1,0 +1,19 @@
+uuid: 91fb1d07-aab7-4e70-9744-e68d997925be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_rp_alt_email
+    - profile.type.referral_partner
+id: profile.referral_partner.field_rp_alt_email
+field_name: field_rp_alt_email
+entity_type: profile
+bundle: referral_partner
+label: 'Alt. Email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

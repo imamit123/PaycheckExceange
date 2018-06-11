@@ -1,0 +1,10 @@
+uuid: 4364094e-d51a-42d6-8648-b502227eb9e2
+langcode: en
+status: true
+dependencies: {  }
+id: prospect
+label: Prospect
+weight: -9
+is_admin: null
+permissions:
+  - 'view commerce_product'

@@ -1,0 +1,21 @@
+uuid: 84a4c295-3cf8-4b36-86cb-8f0d00980b8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_alt_phone
+    - profile.type.employee
+  module:
+    - telephone
+id: profile.employee.field_emp_alt_phone
+field_name: field_emp_alt_phone
+entity_type: profile
+bundle: employee
+label: 'Alt. Phone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

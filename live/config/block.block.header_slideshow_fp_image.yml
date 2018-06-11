@@ -1,0 +1,32 @@
+uuid: 8f17de7f-aa71-4c36-888d-9994dd72d3fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front
+    - views.view.header_slideshow
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - paycheck_exchange
+id: header_slideshow_fp_image
+theme: paycheck_exchange
+region: hero
+weight: -24
+provider: null
+plugin: 'views_block:header_slideshow-fp_image'
+settings:
+  id: 'views_block:header_slideshow-fp_image'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front
+    context_mapping: {  }

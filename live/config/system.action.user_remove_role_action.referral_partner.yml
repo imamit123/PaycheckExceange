@@ -1,0 +1,14 @@
+uuid: d48996ae-552d-4bd5-8316-6372fefcb805
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.referral_partner
+  module:
+    - user
+id: user_remove_role_action.referral_partner
+label: 'Remove the Referral Partner role from the selected users'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: referral_partner

@@ -1,0 +1,23 @@
+uuid: 4f2adc20-aa35-4a1f-8d03-3377435f7c7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - pcx_orgs
+    - telephone
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: organization.field_org_financial_phone
+field_name: field_org_financial_phone
+entity_type: organization
+type: telephone
+settings: {  }
+module: telephone
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

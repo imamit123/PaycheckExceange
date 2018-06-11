@@ -1,0 +1,47 @@
+uuid: 32bb5ee9-81c5-4f8c-be61-ce43b229f59a
+langcode: en
+status: true
+dependencies: {  }
+id: front_message
+label: 'Front Message'
+options:
+  animation: fade
+  animationSpeed: 600
+  direction: horizontal
+  slideshow: true
+  easing: swing
+  smoothHeight: false
+  reverse: false
+  slideshowSpeed: 7000
+  animationLoop: true
+  randomize: false
+  startAt: 0
+  itemWidth: 0
+  itemMargin: 0
+  minItems: 0
+  maxItems: 0
+  move: 0
+  directionNav: true
+  controlNav: '0'
+  thumbCaptions: false
+  thumbCaptionsBoth: false
+  keyboard: false
+  multipleKeyboard: false
+  mousewheel: false
+  touch: true
+  prevText: Previous
+  nextText: Next
+  namespace: flex-
+  selector: '.slides > li'
+  sync: '#flex-fb-image'
+  asNavFor: ''
+  initDelay: 500
+  useCSS: true
+  video: false
+  pausePlay: false
+  pauseText: Pause
+  playText: Play
+  pauseOnAction: true
+  pauseOnHover: false
+  controlsContainer: .main-flex-nav
+  manualControls: ''

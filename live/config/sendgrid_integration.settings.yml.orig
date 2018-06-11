@@ -1,0 +1,12 @@
+apikey: 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
+test_defaults:
+  to: dcabrera@achieveagency.com
+  subject: 'Test Email from SendGrid Module'
+  body:
+    value: 'Test Message for SendGrid.'
+    format: plain_text
+  from_name: ''
+  to_name: ''
+  reply_to: ''
+_core:
+  default_config_hash: g4qz7cPnloXFwtnLYfIKI2VS0gf_UFOz_I2uQiiulC8

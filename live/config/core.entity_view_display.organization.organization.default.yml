@@ -1,0 +1,333 @@
+uuid: a05396d7-ae4e-44ec-bce9-7db484afa030
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.organization.organization.field_org_address
+    - field.field.organization.organization.field_org_benefits_renewal_date
+    - field.field.organization.organization.field_org_financial_address
+    - field.field.organization.organization.field_org_financial_email
+    - field.field.organization.organization.field_org_financial_first_name
+    - field.field.organization.organization.field_org_financial_last_name
+    - field.field.organization.organization.field_org_financial_phone
+    - field.field.organization.organization.field_org_num_eligible_employees
+    - field.field.organization.organization.field_org_organization_status
+    - field.field.organization.organization.field_org_payroll_frequency
+    - field.field.organization.organization.field_org_primary_email
+    - field.field.organization.organization.field_org_primary_first_name
+    - field.field.organization.organization.field_org_primary_last_name
+    - field.field.organization.organization.field_org_primary_phone
+    - field.field.organization.organization.field_org_referral_partners
+    - field.field.organization.organization.field_org_secondary_email
+    - field.field.organization.organization.field_org_secondary_first_name
+    - field.field.organization.organization.field_org_secondary_last_name
+    - field.field.organization.organization.field_org_secondary_phone
+    - field.field.organization.organization.field_org_tax_id
+    - field.field.organization.organization.field_org_total_employees
+    - field.field.organization.organization.field_org_type_of_organiziation
+    - field.field.organization.organization.field_org_website_url
+    - field.field.organization.organization.field_organization_commissions
+    - pcx_orgs.organization_type.organization
+  module:
+    - address
+    - datetime
+    - field_group
+    - link
+    - options
+    - telephone
+    - viewfield
+third_party_settings:
+  field_group:
+    group_organization_information:
+      children:
+        - group_main_info
+        - group_primary_contact
+        - group_secondary_contact
+        - group_financial_contact
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: 'Organization Information'
+    group_main_info:
+      children:
+        - name
+        - field_org_address
+        - field_org_website_url
+        - field_org_tax_id
+        - field_org_total_employees
+        - field_org_num_eligible_employees
+        - field_org_payroll_frequency
+        - field_org_type_of_organiziation
+        - field_org_benefits_renewal_date
+        - field_org_organization_status
+      parent_name: group_organization_information
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Main Info'
+    group_primary_contact:
+      children:
+        - field_org_primary_first_name
+        - field_org_primary_last_name
+        - field_org_primary_phone
+        - field_org_primary_email
+      parent_name: group_organization_information
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Primary Contact'
+    group_secondary_contact:
+      children:
+        - field_org_secondary_first_name
+        - field_org_secondary_last_name
+        - field_org_secondary_phone
+        - field_org_secondary_email
+      parent_name: group_organization_information
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Secondary Contact'
+    group_financial_contact:
+      children:
+        - field_org_financial_first_name
+        - field_org_financial_last_name
+        - field_org_financial_address
+        - field_org_financial_phone
+        - field_org_financial_email
+      parent_name: group_organization_information
+      weight: 23
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+      label: 'Financial Contact'
+id: organization.organization.default
+targetEntityType: organization
+bundle: organization
+mode: default
+content:
+  field_org_address:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_org_benefits_renewal_date:
+    weight: 10
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: html_yearless_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_org_financial_address:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_org_financial_email:
+    weight: 10
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_org_financial_first_name:
+    weight: 6
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_org_financial_last_name:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_org_financial_phone:
+    weight: 9
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_org_num_eligible_employees:
+    weight: 6
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_org_organization_status:
+    weight: 11
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_org_payroll_frequency:
+    weight: 7
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_org_primary_email:
+    weight: 10
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_org_primary_first_name:
+    weight: 7
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_org_primary_last_name:
+    weight: 8
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_org_primary_phone:
+    weight: 9
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_org_referral_partners:
+    weight: 9
+    label: above
+    settings:
+      view_title: hidden
+      always_build_output: '1'
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+  field_org_secondary_email:
+    weight: 13
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_org_secondary_first_name:
+    weight: 10
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_org_secondary_last_name:
+    weight: 11
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_org_secondary_phone:
+    weight: 12
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_org_tax_id:
+    weight: 4
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_org_total_employees:
+    weight: 5
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_org_type_of_organiziation:
+    weight: 9
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_org_website_url:
+    weight: 3
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_organization_commissions:
+    weight: 24
+    label: above
+    settings:
+      view_title: hidden
+      always_build_output: '1'
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+  name:
+    label: inline
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  user_id: true

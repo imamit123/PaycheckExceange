@@ -1,0 +1,23 @@
+uuid: d92a7280-6014-4ccc-9f6c-6eb3101c8753
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: commerce_product_variation.attribute_mount_type
+field_name: attribute_mount_type
+entity_type: commerce_product_variation
+type: entity_reference
+settings:
+  target_type: commerce_product_attribute_value
+module: core
+locked: false
+cardinality: 1
+translatable: false
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

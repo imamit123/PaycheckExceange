@@ -1,0 +1,6 @@
+uuid: 1577885f-1130-47a2-8184-8910ecae75e2
+langcode: en
+status: true
+dependencies: {  }
+id: organization
+label: 'Organization Type'

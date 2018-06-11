@@ -1,0 +1,21 @@
+uuid: 075ceec5-7502-46fc-9807-f6e7906e769f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_date_of_hire
+    - profile.type.employee
+  module:
+    - datetime
+id: profile.employee.field_emp_date_of_hire
+field_name: field_emp_date_of_hire
+entity_type: profile
+bundle: employee
+label: 'Date of Hire'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,30 @@
+uuid: 5346740a-da22-421f-a789-78837ab73b06
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.mobile-user-menu
+  module:
+    - block_visibility_groups
+    - system
+  theme:
+    - paycheck_exchange
+id: mobileusermenu
+theme: paycheck_exchange
+region: navigation
+weight: -24
+provider: null
+plugin: 'system_menu_block:mobile-user-menu'
+settings:
+  id: 'system_menu_block:mobile-user-menu'
+  label: 'Mobile User Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

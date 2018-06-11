@@ -1,0 +1,6 @@
+uuid: c621d2a3-f2e8-4d5c-958e-c40b05d61d4c
+langcode: en
+status: true
+dependencies: {  }
+id: commission_rate
+label: 'Commission Rate'

@@ -1,0 +1,7 @@
+uuid: 0b2ee076-d242-4359-b40b-86d782879c59
+langcode: en
+status: true
+dependencies: {  }
+id: wireless_subwoofer
+label: 'Wireless Subwoofer'
+elementType: commerce_product_rendered_attribute

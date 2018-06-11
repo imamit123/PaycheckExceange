@@ -1,0 +1,23 @@
+uuid: 04a64fb5-40d0-4731-8784-dfd85d5e7134
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commission_rate.field_commission_rate
+    - pcx_rates.commission_rate_type.commission_rate
+id: commission_rate.commission_rate.field_commission_rate
+field_name: field_commission_rate
+entity_type: commission_rate
+bundle: commission_rate
+label: 'Commission Rate'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: '%'
+field_type: decimal

@@ -1,0 +1,33 @@
+uuid: 8a7e8de0-3b1a-468d-8d95-cfe933f8c7e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front
+  content:
+    - 'block_content:link_block:3b59a96b-d1b9-42d4-a09f-fd85a6df7d9e'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: signintomyaccount
+theme: paycheck_exchange
+region: third_bottom
+weight: 0
+provider: null
+plugin: 'block_content:3b59a96b-d1b9-42d4-a09f-fd85a6df7d9e'
+settings:
+  id: 'block_content:3b59a96b-d1b9-42d4-a09f-fd85a6df7d9e'
+  label: 'Sign into my account'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front
+    context_mapping: {  }

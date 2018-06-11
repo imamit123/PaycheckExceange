@@ -1,0 +1,193 @@
+uuid: 691d2257-b00e-4fc8-a932-3ddcb4810a8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.field.commerce_product.default.body
+    - field.field.commerce_product.default.field_abt_product_vsn
+    - field.field.commerce_product.default.field_fan_speed
+    - field.field.commerce_product.default.field_product_brand
+    - field.field.commerce_product.default.field_product_category
+    - field.field.commerce_product.default.field_product_features
+    - field.field.commerce_product.default.field_product_mpn
+    - field.field.commerce_product.default.field_product_msrp
+    - field.field.commerce_product.default.field_product_stock_level
+    - field.field.commerce_product.default.field_remote_image
+    - field.field.commerce_product.default.stores
+    - field.field.commerce_product.default.variations
+  module:
+    - commerce_price
+    - field_group
+    - inline_entity_form
+    - remote_image
+    - text
+third_party_settings:
+  field_group:
+    group_abt_product_description:
+      children:
+        - field_remote_image
+        - body
+        - field_product_features
+      parent_name: ''
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'Product Description'
+    group_abt_pricing_quantity:
+      children:
+        - field_product_stock_level
+        - field_product_msrp
+        - variations
+      parent_name: ''
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'Pricing / Quantity'
+    group_attributes:
+      children:
+        - field_fan_speed
+      parent_name: ''
+      weight: 7
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: vertical
+      label: Attributes
+_core:
+  default_config_hash: o7hmyguUX6UeVQHlXaHSO_4mI0GfY85kn7qGrlkrdpw
+id: commerce_product.default.default
+targetEntityType: commerce_product
+bundle: default
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 9
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_abt_product_vsn:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fan_speed:
+    weight: 10
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_product_brand:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_product_category:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_product_features:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_product_mpn:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_product_msrp:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: commerce_price_default
+    region: content
+  field_product_stock_level:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_remote_image:
+    weight: 8
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      placeholder_alt: ''
+      placeholder_width: ''
+      placeholder_height: ''
+    third_party_settings: {  }
+    type: remote_image
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    third_party_settings: {  }
+    region: content
+  stores:
+    type: options_select
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  variations:
+    type: inline_entity_form_complex
+    weight: 9
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      match_operator: CONTAINS
+      override_labels: false
+      allow_existing: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  path: true
+  uid: true

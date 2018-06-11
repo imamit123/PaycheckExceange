@@ -1,0 +1,17 @@
+uuid: 5e99b914-0bed-4baa-bc80-5f00f8461f25
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: front
+label: Front
+logic: and
+conditions:
+  ae9425f3-8b2c-4c28-9713-25fc725b6550:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+    uuid: ae9425f3-8b2c-4c28-9713-25fc725b6550
+allow_other_conditions: false

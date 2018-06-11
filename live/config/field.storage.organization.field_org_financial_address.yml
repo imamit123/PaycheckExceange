@@ -1,0 +1,23 @@
+uuid: 8f6dc125-6537-4a96-a8a7-41b9c9427564
+langcode: en
+status: true
+dependencies:
+  module:
+    - address
+    - field_permissions
+    - pcx_orgs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: organization.field_org_financial_address
+field_name: field_org_financial_address
+entity_type: organization
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

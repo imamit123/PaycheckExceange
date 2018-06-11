@@ -1,0 +1,39 @@
+uuid: dbb9e5bc-589a-41a7-909b-17c37a112790
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.catalog_category_browser_block
+  module:
+    - system
+    - user
+    - views
+  theme:
+    - bartik
+id: views_block__catalog_category_browser_block_block_1
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:catalog_category_browser_block-block_1'
+settings:
+  id: 'views_block:catalog_category_browser_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/catalog/*'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

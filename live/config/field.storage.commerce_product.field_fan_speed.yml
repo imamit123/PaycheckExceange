@@ -1,0 +1,23 @@
+uuid: 14eb9de9-0540-4698-a731-3d0150cb72fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: commerce_product.field_fan_speed
+field_name: field_fan_speed
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: commerce_product_attribute_value
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

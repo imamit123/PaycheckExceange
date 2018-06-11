@@ -1,0 +1,33 @@
+uuid: c4c4bfe0-b481-4ed0-8575-0c094b6f30ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.authenticated_home_page
+  content:
+    - 'block_content:basic:79e18032-9676-4563-90f5-1b14a8f3db80'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: buynowpaylaterauthblock
+theme: paycheck_exchange
+region: front_left
+weight: 0
+provider: null
+plugin: 'block_content:79e18032-9676-4563-90f5-1b14a8f3db80'
+settings:
+  id: 'block_content:79e18032-9676-4563-90f5-1b14a8f3db80'
+  label: 'Buy Now Pay Later - Auth block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: authenticated_home_page
+    context_mapping: {  }

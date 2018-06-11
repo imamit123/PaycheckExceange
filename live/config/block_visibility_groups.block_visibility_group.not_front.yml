@@ -1,0 +1,26 @@
+uuid: da943f3f-5629-4b7a-894e-ec79d8e46749
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: not_front
+label: 'Not Front'
+logic: and
+conditions:
+  caa0fe7e-bae8-4fab-bcac-3da8ee4e3162:
+    id: request_path
+    pages: "<front>\r\n/node/6"
+    negate: true
+    context_mapping: {  }
+    uuid: caa0fe7e-bae8-4fab-bcac-3da8ee4e3162
+  3972f0a1-82e4-41b3-b3bf-69969c8d921e:
+    id: node_type
+    bundles:
+      landing_page: landing_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: 3972f0a1-82e4-41b3-b3bf-69969c8d921e
+allow_other_conditions: false

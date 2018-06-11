@@ -1,0 +1,10 @@
+uuid: 09cd4384-dc38-40f5-939d-a1701d4d818a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_promotion
+id: commerce_promotion_coupon.token
+label: Token
+targetEntityType: commerce_promotion_coupon
+cache: true

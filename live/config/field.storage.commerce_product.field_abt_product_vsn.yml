@@ -1,0 +1,25 @@
+uuid: bc87430a-aa34-4a09-a3b6-ee58f57996a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: commerce_product.field_abt_product_vsn
+field_name: field_abt_product_vsn
+entity_type: commerce_product
+type: string
+settings:
+  max_length: 100
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

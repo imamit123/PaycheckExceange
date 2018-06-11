@@ -1,0 +1,33 @@
+uuid: c246c5a7-5d2c-4d92-9f7c-3af8b34691bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.front
+  content:
+    - 'block_content:basic:c6285533-b0c6-4ad1-ad4f-8aefdfab665a'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: exclusivefinancialblock
+theme: paycheck_exchange
+region: first_middle
+weight: -24
+provider: null
+plugin: 'block_content:c6285533-b0c6-4ad1-ad4f-8aefdfab665a'
+settings:
+  id: 'block_content:c6285533-b0c6-4ad1-ad4f-8aefdfab665a'
+  label: 'Exclusive Financial block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: front
+    context_mapping: {  }

@@ -1,0 +1,66 @@
+uuid: 91403079-21de-4ce9-8d65-2528c1f27b97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_rp_referred_organizations
+    - profile.type.referral_partner
+    - views.view.referred_organizations_by_user
+  module:
+    - viewfield
+id: profile.referral_partner.field_rp_referred_organizations
+field_name: field_rp_referred_organizations
+entity_type: profile
+bundle: referral_partner
+label: 'Referred Organizations'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    token_help: ''
+    display_id: block_1
+    arguments: ''
+    target_uuid: 26d4ab47-ce0c-43b1-8118-e591a81f9eb9
+default_value_callback: ''
+settings:
+  force_default: 0
+  allowed_views:
+    referred_organizations_by_user: referred_organizations_by_user
+    commerce_activity: 0
+    basic_page_admin: 0
+    commerce_cart_block: 0
+    commerce_cart_form: 0
+    commerce_carts: 0
+    catalog_taxonomy: 0
+    catalog_category_browser_block: 0
+    commerce_checkout_order_summary: 0
+    commission_reference_view_for_org_entityies: 0
+    content: 0
+    block_content: 0
+    files: 0
+    frontpage: 0
+    commerce_order_item_table: 0
+    commerce_orders: 0
+    organizations_admin_view: 0
+    user_admin_people: 0
+    product_display_view: 0
+    commerce_products: 0
+    profiles: 0
+    comments_recent: 0
+    content_recent: 0
+    referral_partners: 0
+    commerce_stores: 0
+    taxonomy_term: 0
+    commerce_user_orders: 0
+    who_s_new: 0
+    who_s_online: 0
+  allowed_display_types:
+    block: block
+    embed: 0
+    feed: 0
+    default: 0
+    page: 0
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

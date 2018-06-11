@@ -1,0 +1,24 @@
+uuid: 0bcf0ce3-90e8-47a1-8cf1-1b12a7b46e90
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - pcx_orgs
+    - taxonomy
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: organization.field_org_type_of_organiziation
+field_name: field_org_type_of_organiziation
+entity_type: organization
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

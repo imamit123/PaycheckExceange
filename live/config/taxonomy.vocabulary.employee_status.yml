@@ -1,0 +1,9 @@
+uuid: 017f5773-448e-40b8-a2e2-deb2fb3d5fc8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Employee Status'
+vid: employee_status
+description: ''
+hierarchy: 0
+weight: 0

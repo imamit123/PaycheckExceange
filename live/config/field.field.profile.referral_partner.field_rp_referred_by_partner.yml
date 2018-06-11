@@ -1,0 +1,35 @@
+uuid: 7b9b91fd-03c9-4182-927d-9603e40b0946
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_rp_referred_by_partner
+    - profile.type.referral_partner
+id: profile.referral_partner.field_rp_referred_by_partner
+field_name: field_rp_referred_by_partner
+entity_type: profile
+bundle: referral_partner
+label: 'Referred by Partner'
+description: 'If this partner was referred by another partner you may link them here by typing the name of the existing partner that referred this partner.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        referral_partner: referral_partner
+        paycheck_exc: '0'
+        prospect: '0'
+        organization: '0'
+        employee: '0'
+        administrator: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

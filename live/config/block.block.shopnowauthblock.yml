@@ -1,0 +1,33 @@
+uuid: 3e862831-b9f8-4a0c-8b4e-7680229108e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.authenticated_home_page
+  content:
+    - 'block_content:link_block:e249a43f-51e3-4e4e-8c77-fa2b11477b7c'
+  module:
+    - block_content
+    - block_visibility_groups
+  theme:
+    - paycheck_exchange
+id: shopnowauthblock
+theme: paycheck_exchange
+region: front_left
+weight: 0
+provider: null
+plugin: 'block_content:e249a43f-51e3-4e4e-8c77-fa2b11477b7c'
+settings:
+  id: 'block_content:e249a43f-51e3-4e4e-8c77-fa2b11477b7c'
+  label: 'Shop Now - Auth block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: authenticated_home_page
+    context_mapping: {  }

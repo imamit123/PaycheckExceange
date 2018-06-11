@@ -1,0 +1,11 @@
+uuid: 6ad30c8c-a95b-4bed-9da2-c199e8096fc1
+langcode: en
+status: true
+dependencies: {  }
+id: organization
+label: Organization
+weight: -7
+is_admin: null
+permissions:
+  - 'view commerce_product'
+  - 'view commerce_store'

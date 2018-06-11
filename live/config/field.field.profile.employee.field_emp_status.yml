@@ -1,0 +1,28 @@
+uuid: 92a857d1-2888-46ed-98b0-48a4b7b4ba6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.profile.field_emp_status
+    - profile.type.employee
+    - taxonomy.vocabulary.employee_status
+id: profile.employee.field_emp_status
+field_name: field_emp_status
+entity_type: profile
+bundle: employee
+label: 'Employee Status'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      employee_status: employee_status
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

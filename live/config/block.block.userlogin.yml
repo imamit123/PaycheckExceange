@@ -1,0 +1,26 @@
+uuid: 806c8c3a-824f-4d42-a1ec-68385e0a03e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - paycheck_exchange
+id: userlogin
+theme: paycheck_exchange
+region: front_left
+weight: -21
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'Get Started!'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

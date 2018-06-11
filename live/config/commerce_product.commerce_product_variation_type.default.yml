@@ -1,0 +1,16 @@
+uuid: 4e6e4ebc-ca1a-4bcb-8272-ad714fe9e2a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_wishlist
+third_party_settings:
+  commerce_wishlist:
+    wishlist_item_type: null
+_core:
+  default_config_hash: QPuFH9E4612ox18hXdUXL8FhU021rCvOtYISSmvMQzc
+id: default
+label: Default
+orderItemType: default
+generateTitle: false
+traits: {  }

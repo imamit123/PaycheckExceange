@@ -1,0 +1,38 @@
+uuid: 765ff4eb-7721-4a1c-b6af-336c94b6123e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.catalog-menu
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: catalogmenu
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:catalog-menu'
+settings:
+  id: 'system_menu_block:catalog-menu'
+  label: 'Catalog Menu'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      paycheck_exc: paycheck_exc
+      prospect: prospect
+      referral_partner: referral_partner
+      organization: organization
+      employee: employee
+      administrator: administrator
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
